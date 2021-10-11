@@ -48,7 +48,7 @@ def main():
 
 	h = Integer(47)
 	print(f'Value of fib 47 calculated with c++ = {h.fib()}')
-	
+	# Value of fib 47 calculated with c++ = -1323752223 too big to calculate
 
 
 if __name__ == '__main__':
