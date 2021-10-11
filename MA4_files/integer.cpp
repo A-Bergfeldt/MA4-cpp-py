@@ -21,7 +21,12 @@ int Integer::get(){
 void Integer::set(int n){
 	val = n;
 	}
-
+int fib(int n)
+{
+	if (n <= 1)
+		return n;
+	return fib(n-1) + fib(n-2);
+}
 
 extern "C"{
 	Integer* Integer_new(int n) {return new Integer(n);}
