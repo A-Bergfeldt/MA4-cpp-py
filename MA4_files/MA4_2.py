@@ -11,8 +11,8 @@ def fib_py(n):
 		return(fib_py(n-1) + fib_py(n-2)) 
 
 def main():
-	start_fib = 10
-	end_fib = 20
+	start_fib = 30
+	end_fib = 45
 	py_time = []
 	cpp_time = []
 	fib_vals = list(range(start_fib, end_fib))
@@ -47,7 +47,7 @@ def main():
 	plt.savefig('fib_over_time.png')
 
 	h = Integer(47)
-	print(f'Value of fib 47 calculated with c++ = {h}')
+	print(f'Value of fib 47 calculated with c++ = {h.fib()}')
 	
 
 
