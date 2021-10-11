@@ -21,11 +21,17 @@ int Integer::get(){
 void Integer::set(int n){
 	val = n;
 	}
-int fib(int n)
+
+int Intiger::fib()
+{
+	return _fib(val);
+}
+
+int Intiger::_fib(int n)
 {
 	if (n <= 1)
 		return n;
-	return fib(n-1) + fib(n-2);
+	return _fib(n-1) + _fib(n-2);
 }
 
 extern "C"{

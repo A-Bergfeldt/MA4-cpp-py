@@ -2,12 +2,6 @@
 import ctypes
 lib = ctypes.cdll.LoadLibrary('./libinteger.so')
 
-def fib_py(n):
-	if n <= 1:
-		return n
-
-	else:
-		return(fib_py(n-1) + fib_py(n-2)) 
 
 class Integer(object):
 	def __init__(self, val):
