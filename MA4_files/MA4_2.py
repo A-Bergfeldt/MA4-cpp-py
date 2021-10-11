@@ -37,13 +37,17 @@ def main():
 		print(f"Finished calculating fib {val} with c++")
 		time = end - start
 		cpp_time.append(time)
+	print('Done!')
 
 	plt.xlim([start_fib, end_fib])
 	plt.xlabel('Fib nr calculated')
 	plt.ylabel('TTime to calculate')
 	plt.plot(fib_vals, py_time, c = 'b', label ='Fib time - py')
 	plt.plot(fib_vals, cpp_time, c ='r', label = 'Fib time - c++')
-	plt.show()
+	plt.savefig('fib_over_time.png')
+
+	h = Integer(47)
+	print(f'Value of fib 47 calculated with c++ = {h}')
 	
 
 
