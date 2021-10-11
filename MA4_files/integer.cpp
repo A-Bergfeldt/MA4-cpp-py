@@ -6,7 +6,9 @@ class Integer{
 		Integer(int);
 		int get();
 		void set(int);
+		int fib();
 	private:
+		int internal_fib(val;)
 		int val;
 	};
  
@@ -22,13 +24,11 @@ void Integer::set(int n){
 	val = n;
 	}
 
-int Integer::fib()
-{
+int Integer::fib(){
 	return internal_fib(val);
-}
+	}
 
-int Integer::internal_fib(int n)
-{
+int Integer::internal_fib(int n){
 	if (n <= 1)
 		return n;
 	return internal_fib(n-1) + internal_fib(n-2);
