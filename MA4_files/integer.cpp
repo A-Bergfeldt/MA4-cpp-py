@@ -8,8 +8,8 @@ class Integer{
 		void set(int);
 		int fib();
 	private:
-		int internal_fib(val;)
 		int val;
+		int internal_fib(val);
 	};
  
 Integer::Integer(int n){
