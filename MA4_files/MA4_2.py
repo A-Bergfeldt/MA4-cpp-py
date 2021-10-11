@@ -12,7 +12,7 @@ def fib_py(n):
 
 def main():
 	start_fib = 30
-	end_fib = 45
+	end_fib = 46
 	py_time = []
 	cpp_time = []
 	fib_vals = list(range(start_fib, end_fib))
