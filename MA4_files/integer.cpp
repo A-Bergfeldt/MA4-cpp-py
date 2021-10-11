@@ -24,14 +24,14 @@ void Integer::set(int n){
 
 int Intiger::fib()
 {
-	return _fib(val);
+	return internal_fib(val);
 }
 
-int Intiger::_fib(int n)
+int Intiger::internal_fib(int n)
 {
 	if (n <= 1)
 		return n;
-	return _fib(n-1) + _fib(n-2);
+	return internal_fib(n-1) + internal_fib(n-2);
 }
 
 extern "C"{
@@ -44,4 +44,5 @@ extern "C"{
 			integer = nullptr;
 			}
 		}
+	int Integer _fib(Integer* integer) {return integer->fib();}
 	}
