@@ -44,6 +44,7 @@ def main():
 	plt.ylabel('TTime to calculate')
 	plt.plot(fib_vals, py_time, c = 'b', label ='Fib time - py')
 	plt.plot(fib_vals, cpp_time, c ='r', label = 'Fib time - c++')
+	plt.legend()
 	plt.savefig('fib_over_time.png')
 
 	h = Integer(47)
